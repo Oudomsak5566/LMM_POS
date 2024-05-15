@@ -6,9 +6,12 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FooterLayout(
-      footer: Text('data'),
-      // child: PageMainContent(),
+    return Scaffold(
+      body: FooterLayout(
+        footer: Text('data'),
+        child: TextField(),
+        // child: PageMainContent(),
+      ),
     );
   }
 }
