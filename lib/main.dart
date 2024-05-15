@@ -5,6 +5,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:lmm_pos/splash_screen.dart';
 import 'package:lmm_pos/utils/blindings/initial_binding.dart';
 import 'package:lmm_pos/utils/routes/routing.dart';
+import 'package:lmm_pos/utils/styles/colors.dart';
 import 'package:sizer/sizer.dart';
 
 Future<void> main() async {
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         theme: ThemeData(
           useMaterial3: true,
+          scaffoldBackgroundColor: cr_background,
         ),
         home: const SplashScreen(),
         debugShowCheckedModeBanner: false,
